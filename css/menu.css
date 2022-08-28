@@ -55,15 +55,20 @@ html {
     max-width: 1920px;
     min-width: 428px;
     font-size: 62.5%;
+    background-color: rgb(0, 4, 17);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(225, 239, 230);
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
@@ -94,8 +99,35 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
-
+header .container {
+  background-color: rgb(0, 4, 17, 0.8) ;
+}
+nav .main{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fa {
+  margin: 1% 1%;
+  padding: 1% 1%;
+  font-size: 2rem;
+  border-radius: 25%;
+  width: 3%;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 /* spacer */
 .spacer {
     width: 100%;
@@ -111,14 +143,57 @@ header {
 /* menu */
 
 .menu {
-    width: 100%;
     height: auto;
-    background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
+    background-image: linear-gradient(rgb(0, 4, 17, .8), rgb(0, 4, 17, .8)), url('../img/staff-bartender.jpg');
+    background-color: rgba(0, 4, 17);
+    color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu-section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  margin: 1% 1%;
+}
+
+.menu-item{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1% 1%;
+}
+
+.menu-item div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 1%;
+}
+
+.menu p{
+  width: 100%;
+  display: flex;
+  margin: 1% 1%;
+}
+
+.menu h2{
+  margin: 1% 1%;
+  width:90%;
+  justify-self: center;
+  text-align: center;
+}
+
+
 
 /* footer section */
 footer {
